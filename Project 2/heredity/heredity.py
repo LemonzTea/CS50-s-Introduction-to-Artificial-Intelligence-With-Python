@@ -140,7 +140,7 @@ def joint_probability(people, one_gene, two_genes, have_trait):
         * everyone not in set` have_trait` does not have the trait.
     """
     
-    def calculate_parent_probability(gene_count, inherit_gene = True):
+    def calculate_parent_probability(gene_count, inherit_gene=True):
         """ Parameters 
             `has_genee` - Accepts true / false value if parents should or should not have the gene
             `inherit_gene` - Accepts true / false value if the child inherit the gene
@@ -175,7 +175,7 @@ def joint_probability(people, one_gene, two_genes, have_trait):
 
         if mother_name is None and father_name is None:
             # Probability of getting genes naturally
-            individual_probability =  PROBS["gene"][number_of_genes]
+            individual_probability = PROBS["gene"][number_of_genes]
 
         else:
             mother_gene = count_gene(mother_name, one_gene, two_genes)
